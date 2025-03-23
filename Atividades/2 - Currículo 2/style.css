@@ -1,3 +1,28 @@
-.titulo{
-    
+#titulo {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 36px;
+}
+
+#info {
+    text-align: center;
+    font-size: 14px;
+    font-variant: small-caps;
+}
+
+.data {
+    color: darkblue;
+    font-weight: bolder;
+}
+
+.subtitulos {
+    background-color: lightgray;
+    width: fit-content;
+    text-indent: 30px;
+}
+
+.link {
+    text-decoration: none;
+    color: darkblue;
+    font-weight: bold;
 }
