@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Overflow</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            padding: 16px;
+            width: 300px;
+            height: 300px;
+            margin-bottom: 16px;
+            background-color: aquamarine;
+        }
+        .item{
+            background-color: blanchedalmond;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        .fit-content .item{
+            width: fit-content;
+        }
+        .min-content .item{
+            width: min-content;
+        }
+        .max-content .item{
+            width: max-content;
+        }
+        .overflow-hidden{
+            overflow: hidden;
+        }
+        .overflow-scroll{
+            overflow: scroll;
+        }
+        .overflow-auto{
+            overflow: auto;
+        }
+        .overflow-visible{
+            overflow: visible;
+        }
+    </style>
+</head>
+<body>
+    <div class="container fit-content overflow-auto">
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod unde voluptate enim possimus alias. Earum officia dolorem rem voluptatum aut aspernatur vitae, corporis tempora, exercitationem, dolorum id nobis dolore necessitatibus.</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, dolorum?</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium sunt totam explicabo natus, quae adipisci error molestias reiciendis fugit?</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem eaque quo dolore officia mollitia consectetur vitae, itaque voluptatibus, commodi quisquam assumenda maxime optio hic harum, voluptatem aliquam dolorum ipsa delectus molestias cum. Modi delectus omnis dolor aspernatur similique, enim dolorem earum doloremque accusamus pariatur voluptatem rerum dolores repudiandae laudantium deserunt.</div>
+    </div>
+    <div class="container min-content overflow-scroll">
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod unde voluptate enim possimus alias. Earum officia dolorem rem voluptatum aut aspernatur vitae, corporis tempora, exercitationem, dolorum id nobis dolore necessitatibus.</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, dolorum?</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium sunt totam explicabo natus, quae adipisci error molestias reiciendis fugit?</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem eaque quo dolore officia mollitia consectetur vitae, itaque voluptatibus, commodi quisquam assumenda maxime optio hic harum, voluptatem aliquam dolorum ipsa delectus molestias cum. Modi delectus omnis dolor aspernatur similique, enim dolorem earum doloremque accusamus pariatur voluptatem rerum dolores repudiandae laudantium deserunt.</div>
+    </div>
+    <div class="container max-content overflow-hidden">
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod unde voluptate enim possimus alias. Earum officia dolorem rem voluptatum aut aspernatur vitae, corporis tempora, exercitationem, dolorum id nobis dolore necessitatibus.</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, dolorum?</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium sunt totam explicabo natus, quae adipisci error molestias reiciendis fugit?</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem eaque quo dolore officia mollitia consectetur vitae, itaque voluptatibus, commodi quisquam assumenda maxime optio hic harum, voluptatem aliquam dolorum ipsa delectus molestias cum. Modi delectus omnis dolor aspernatur similique, enim dolorem earum doloremque accusamus pariatur voluptatem rerum dolores repudiandae laudantium deserunt.</div>
+    </div>
+</body>
+</html>
