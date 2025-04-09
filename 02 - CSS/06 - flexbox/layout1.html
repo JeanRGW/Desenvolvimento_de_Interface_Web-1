@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox - Parte 1</title>
+    <style>
+        .flexbox{
+            height: 300px;
+            border: 5px solid black;
+            margin-bottom: 20px;
+            display: flex;
+
+            /*row transforma o container em uma linha e os elementos em colunas
+            column transforma o container em uma coluna e os elementos em linhas
+            row-reverse inverte a ordem e a posição dos elementos no row
+            column-reverse faz a mesma coisa mas para column*/
+        }
+        .flexbox div{
+            border: 3px solid blue;
+            width: 200px;
+            margin: 10px;
+        }
+        .flex-container1{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .flex-container3 div{
+            width: 40px;
+            margin: 0;
+        }
+        .flex-container2{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .flex-container3{
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .flex-container4 div{
+            width: 300px;
+        }
+        .flex-container4{
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .flex-container5 div{
+            width: 300px;
+            height: 50px;
+        }
+        .flex-container5{
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap-reverse;
+        }
+    </style>
+</head>
+<body>
+    <div class="flexbox flex-container1">
+        <div class="div1">DIV1</div>
+        <div class="div2">DIV2</div>
+        <div class="div3">DIV3</div>
+        <div class="div4">DIV4</div>
+    </div>
+    <div class="flexbox flex-container2">
+        <div class="div1">DIV1</div>
+        <div class="div2">DIV2</div>
+        <div class="div3">DIV3</div>
+        <div class="div4">DIV4</div>
+    </div>
+    <div class="flexbox flex-container3">
+        <div class="div1">DIV1</div>
+        <div class="div2">DIV2</div>
+        <div class="div3">DIV3</div>
+        <div class="div4">DIV4</div>
+    </div>
+    <div class="flexbox flex-container4">
+        <div class="div1">DIV1</div>
+        <div class="div2">DIV2</div>
+        <div class="div3">DIV3</div>
+        <div class="div4">DIV4</div>
+    </div>
+    <div class="flexbox flex-container5">
+        <div class="div1">DIV1</div>
+        <div class="div2">DIV2</div>
+        <div class="div3">DIV3</div>
+        <div class="div4">DIV4</div>
+        <div class="div1">DIV5</div>
+        <div class="div2">DIV6</div>
+        <div class="div3">DIV7</div>
+        <div class="div4">DIV8</div>
+        <div class="div1">DIV9</div>
+        <div class="div2">DIV10</div>
+        <div class="div3">DIV11</div>
+        <div class="div4">DIV12</div>
+    </div>
+</body>
+</html>
