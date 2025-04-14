@@ -45,7 +45,7 @@
             align-items: center;
         }
         .flex-container7 div{
-            flex-basis: 200px;
+            flex-basis: 100px;
             background-color: lightsalmon;
             margin: 0;
         }
@@ -60,7 +60,33 @@
             align-items: center;
             gap: 10px;
         }
-        
+        .flex-container8 div{
+            flex-basis: 150px;
+            background-color: cyan;
+        }
+        .flex-container8 .div3{
+            background-color: rebeccapurple;
+            flex-shrink: 2;
+        }
+        .flex-container8{
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .flex-container9 div{
+            background-color: lightgreen;
+        }
+        .flex-container9 .div2{
+            order: 2;
+            align-self: center;
+        }
+        .flex-container9 .div3{
+            order: -1;
+            align-self: flex-end;
+        }
+        .flex-container9 .div1{
+            align-self: flex-start;
+        }
     </style>
 </head>
 <body>
@@ -77,6 +103,18 @@
         <div class="div4">DIV4</div>
     </div>
     <div class="flexbox flex-container7">
+        <div class="div1">DIV1</div>
+        <div class="div2">DIV2</div>
+        <div class="div3">DIV3</div>
+        <div class="div4">DIV4</div>
+    </div>
+    <div class="flexbox flex-container8">
+        <div class="div1">DIV1</div>
+        <div class="div2">DIV2</div>
+        <div class="div3">DIV3</div>
+        <div class="div4">DIV4</div>
+    </div>
+    <div class="flexbox flex-container9">
         <div class="div1">DIV1</div>
         <div class="div2">DIV2</div>
         <div class="div3">DIV3</div>
