@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Seletores Avançados</title>
+    <style>
+        /*":first-child" pega o primeiro elemento de cada div
+        ":last-child" pega o ultimo elemento da div
+        "p:first-child" pega o primeiro elemento desde que ele seja um p
+        "a:last-child" pega o ultimo elemento desde que ele seja um a
+        ":nth-child(2)" pega o N-ésimo elemento, nesse caso sendo 2 */
+        div p:first-child{
+            color: red;
+        }
+        div a:last-child{
+            color: green;
+        }
+        div :nth-child(2){
+            background-color: yellow;
+        }
+        div :nth-child(3){
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Primeiro Parágrafo</p>
+        <p>Segundo Parágrafo</p>
+        <p>Terceiro Parágrafo</p>
+    </div>
+    <div>
+        <a href="#">Primeiro Link</a>
+        <a href="#">Segundo Link</a>
+        <a href="#">Terceiro Link</a>
+    </div>
+</body>
+</html>

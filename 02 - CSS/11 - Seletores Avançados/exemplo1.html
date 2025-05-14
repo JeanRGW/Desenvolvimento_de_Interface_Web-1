@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Seletores Avançados</title>
+    <style>
+        /*"p > a" pega só os filhos diretos de p*/
+        /*"h3 + p" pega o elemento que esteja na sequencia h3 e p e só estiliza o p
+        basicamente o + pega uma sequencia de dos elementos definidos
+        */
+        /*"h3 ~ p" pega todos os elementos p que estão no mesmo nível que h3*/
+        article h3 ~ p{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h3>Título de Nível 3</h3>
+        <p>Parágrafo <a>com ancora </a><b>e negrito.</b></p>
+        <p>Parágrafo <a>com ancora </a><b>e negrito.</b></p>
+        <p>Parágrafo <a>com ancora </a><b>e negrito.</b></p>
+        <p>Parágrafo <a>com ancora </a><b>e negrito.</b></p>
+    </article>
+    <p>Parágrafo <a>com ancora </a><b>e negrito.</b></p>
+</body>
+</html>

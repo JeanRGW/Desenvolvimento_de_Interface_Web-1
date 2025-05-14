@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo Classes</title>
+    <style>
+        button{
+            background-color: gray;
+            color: white;
+            border: none;
+            padding: 1em;
+            margin-bottom: .5em;
+        }
+        button:disabled{
+            opacity: .5;
+        }
+        /*p:empty::before pega o paragrafo que está vazio e coloca algo antes dele*/
+        p:empty::before{
+            content: "parágrafo";
+        }
+    </style>
+</head>
+<body>
+    <button>Vai</button>
+    <button disabled>Vai disable</button>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, beatae!</p>
+    <p> </p>
+    <p>pós espaço</p>
+    <p></p>
+    <p>pós sem espaço</p>
+</body>
+</html>

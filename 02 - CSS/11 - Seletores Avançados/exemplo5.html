@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo Elementos</title>
+    <style>
+        /*"::after e ::before" adiciona o content antes e depois do objeto e não permite que o texto adicionado por ele seja selecionavel
+        faz a mesma coisa com imagens, cores, etc.
+        developer.mozilla.org/pt-BR/docs/Web/CSS tem muitas informações do css*/
+        p{
+            text-align: center;
+        }
+        p::before{
+            content: "<<<< ";
+        }
+        p::after{
+            content: " >>>>";
+        }
+        div::before{
+            content: "";
+            width: 1em;
+            height: 1em;
+            background-color: red;
+            display: block;
+        }
+        div::after{
+            content: url("https://images.icon-icons.com/294/PNG/256/Phone_31105.png");
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Parágrafo com texto simples.</p>
+    </div>
+</body>
+</html>

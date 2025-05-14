@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Seletores Avançados</title>
+    <style>
+        /*"a[title]" pega uma âncora que possua o atributo title
+        "a[href^="http"]" pega ancoras com links externos (^pega coisas no inicio)
+        "a[href$="html"]" pega ancoras com links internos ($pega coisas no final)*/
+        a[title="preenchido"]{
+            color: red;
+        }
+        a[href^="http"]{
+            color: yellow;
+        }
+        a[href$="html"]{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <a>sem title</a>
+        <a title="preenchido">com title</a>
+        <a href="exemplo1.html">link interno</a>
+        <a href="http://www.unicentro.br">link externo</a>
+    </article>
+</body>
+</html>
