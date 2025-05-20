@@ -1,0 +1,174 @@
+:root {
+    --color-red: hsl(356deg, 100%, 66%);
+    --color-red-secundary: hsl(355deg, 100%, 74%);
+    --color-orange: hsl(13deg, 100%, 72%);
+    --color-dark-gray: hsl(240deg, 10%, 16%);
+    --gap: 3.5rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    color: #ddd;
+    font-size: 1.6rem;
+}
+
+.logo {
+    font-size: 4rem;
+}
+
+.container {
+    min-width: 50rem;
+    width: 100%;
+    max-width: 120rem;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start {
+    background: linear-gradient(75deg, var(--color-orange), var(--color-red) 60%);
+    border-radius: 0 0 0 12rem;
+    height: 55rem;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-dark-gray);
+    border-radius: 0 100px 0 0;
+}
+
+/* HEADER   */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    height: 7rem;
+    padding: 4rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+}
+
+nav > div {
+    display: flex;
+    align-items: center;
+    height: 100%;       
+}
+
+.nav__left {  
+    gap: var(--gap);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.nav__left a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    gap: var(--gap);
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+nav li {
+    padding: 0.8rem 0.4rem;
+}
+
+/* */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* START */
+.start {
+    text-align: center;
+}
+
+.start__title {
+    font-size: 5.6rem;
+    margin-bottom: 2.5rem;
+}
+
+.start__extra {
+    font-size: 1.9rem;
+    margin-bottom: 6.5rem;
+}
+
+.start__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: row;
+}
+
+/* BUTTONS */
+
+.btn {
+    width: 13.5rem;
+    padding: 1.4rem 0;
+    border-radius: 100vw;
+    text-align: center;
+    transition: all 0.4s;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.btn-white {
+    background-color: #FFF;
+    color: var(--color-red);   
+}
+
+.btn-white:hover {
+    background-color: var(--color-red-secundary);
+    color: #FFF
+}
+
+.btn-border {
+    border: 0.1rem solid #FFF;
+}
+
+.btn-border:hover {
+    background-color: #FFF;
+    color: var(--color-red)
+}
